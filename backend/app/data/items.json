@@ -1,0 +1,66 @@
+{
+  "items": {
+    "sunglasses": {
+      "id": "sunglasses",
+      "name": "칠흑의 암흑 시야",
+      "icon": "🕶️",
+      "description": "아앙? 세상이 너무 눈부셔서 이 몸의 카리스마를 담을 수 없군. 이걸 쓰는 순간, 네놈의 눈빛은 살인 병기가 된다. (양아치력 +5)",
+      "result_message": "선글라스를 장착하자마자 앞이 안 보여서 전봇대에 머리를 박았다. 하지만 굴하지 않는 내 모습, 꽤나 고고하군.",
+      "effect": {
+        "yangachi": 5,
+        "kindness": 0
+      },
+      "type": "instant"
+    },
+    "flower": {
+      "id": "flower",
+      "name": "강제 로맨틱 블로썸",
+      "icon": "💐",
+      "description": "어이, 받아라! 길가다 주운 건데 네놈에게 버리는 거니까 오해하지 말라고! (상냥함 +5)",
+      "result_message": "꽃다발을 건네받은 상대가 공포에 질려 눈물을 흘린다. 이것이 '강제 성불'의 맛인가? 켈켈!",
+      "effect": {
+        "yangachi": 0,
+        "kindness": 5
+      },
+      "type": "instant"
+    },
+    "amulet": {
+      "id": "amulet",
+      "name": "할매의 강권 부적",
+      "icon": "🧿",
+      "description": "할머니가 가슴팍에 쑤셔 넣으신 신비한 종이 쪼가리. '네놈은 아직 지옥에 올 때가 아니다'라며 운명이 나를 거부한다. (게임오버 1회 방지)",
+      "result_message": "죽음의 문턱에서 할머니의 꾸지람이 들려와 다시 현세로 튕겨져 나왔다. ...인 몸이 되어버렸군.",
+      "effect": {
+        "yangachi": 0,
+        "kindness": 0
+      },
+      "type": "passive",
+      "special": "shield"
+    },
+    "coffee": {
+      "id": "coffee",
+      "name": "자본주의의 쓴맛 액체",
+      "icon": "☕️",
+      "description": "심장을 영하 40도로 식혀줄 검은 구정물. 마시는 순간 뇌세포가 비명을 지르며 각성한다. (다음 선택 스탯 변화 완화)",
+      "result_message": "뜨거운 액체가 식도를 타고 내려가며 '사회적 말살'의 위협으로부터 나를 진정시킨다. 후우, 매콤하군.",
+      "effect": {
+        "yangachi": 0,
+        "kindness": 0
+      },
+      "type": "instant",
+      "mitigate": 0.7
+    },
+    "phonecase": {
+      "id": "phonecase",
+      "name": "시선 강탈 골드 칠갑",
+      "icon": "📱",
+      "description": "은은하게 빛나는 게 아니라 눈뽕을 선사하는 폰케이스. 양아치 같은 화려함과 은근한 세심함이 공존하는 마물이다. (양아치력 +3, 상냥함 +3)",
+      "result_message": "폰을 꺼낼 때마다 주변 10m 안의 사람들이 눈을 가린다. 크크크, 이 몸의 존재감이 이 정도인가?",
+      "effect": {
+        "yangachi": 3,
+        "kindness": 3
+      },
+      "type": "passive"
+    }
+  }
+}

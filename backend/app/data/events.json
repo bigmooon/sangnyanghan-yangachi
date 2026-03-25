@@ -1,0 +1,166 @@
+{
+  "events": [
+    {
+      "id": "evt_001",
+      "title": "복도에서 후배와 마주치다",
+      "description": "복도를 걷는데 겁먹은 후배가 길을 비켜준다. 눈이 마주쳤다.",
+      "choices": {
+        "A": {
+          "text": "어이, 뭘 봐? (위협한다)",
+          "result_message": "후배의 동공이 지진 난 것처럼 흔들리는군. '눈 깔아! 내 얼굴에 구멍이라도 뚫을 기세냐? 앙?!' 몸 안의 양아치 기운이 꿈틀거린다.",
+          "effects": {
+            "yangachi_raw": 10,
+            "kindness_raw": -5,
+            "reputation": -5
+          },
+          "item_drop": null
+        },
+        "C": {
+          "text": "야, 밥 먹었어? (친절하게 말한다)",
+          "result_message": "후배의 입에 빵을 쑤셔 넣었다! '야, 네놈! 배에서 꼬르륵 소리가 복도 끝까지 들린다고! 당장 이거 처먹어!' 인류애가 폭발해버렸군.",
+          "effects": {
+            "yangachi_raw": -5,
+            "kindness_raw": 10,
+            "reputation": 5
+          },
+          "item_drop": "flower (길가에 핀 꽃: 이걸 들고 있으면 왠지 순정만화 주인공이 된 것 같은 끔찍한 기분이 든다.)"
+        }
+      }
+    },
+    {
+      "id": "evt_002",
+      "title": "편의점 앞 시비",
+      "description": "편의점 앞에서 다른 동네 애들이 시비를 건다. 셋이서 하나를 건드리고 있다.",
+      "choices": {
+        "A": {
+          "text": "같이 달려든다 (합세한다)",
+          "result_message": "비겁한 린치 축제에 합류했다! '오호, 재밌는 사냥감이군? 나도 이 축제에 끼워달라고!' 지옥행 열차가 출발 대기 중이다.",
+          "effects": {
+            "yangachi_raw": 15,
+            "kindness_raw": -10,
+            "reputation": -10
+          },
+          "item_drop": null
+        },
+        "C": {
+          "text": "야 임마들, 그만해. (끼어든다)",
+          "result_message": "정의의 주먹(인 척하는 난입)으로 약자를 구원했다. '어이, 세 명이서 한 명? 쪽팔리지도 않냐? 숫자를 맞추려면 나랑 붙어야지, 안 그래? 켈켈켈!'",
+          "effects": {
+            "yangachi_raw": -5,
+            "kindness_raw": 15,
+            "reputation": 10
+          },
+          "item_drop": null
+        }
+      }
+    },
+    {
+      "id": "evt_003",
+      "title": "할머니의 무거운 짐",
+      "description": "시장에서 할머니가 무거운 짐을 들고 힘겹게 걷고 있다.",
+      "choices": {
+        "A": {
+          "text": "무시하고 지나간다",
+          "result_message": "할머니의 한숨 소리가 등 뒤에 꽂힌다. '짐이 무거우면 집 밖으로 나오질 말아야지. 쯧.' 사회적 말살의 전조인가?",
+          "effects": {
+            "yangachi_raw": 3,
+            "kindness_raw": -8,
+            "reputation": -2
+          },
+          "item_drop": null
+        },
+        "C": {
+          "text": "할머니, 제가 들어드릴게요",
+          "result_message": "강제 배달 서비스를 시전했다! '어이 할매! 이 무거운 걸 왜 들고 있어? 당장 내놔! 보살핌받으니까 좋지? 켈켈켈!' 심장의 온도가 급상승했다.",
+          "effects": {
+            "yangachi_raw": -8,
+            "kindness_raw": 12,
+            "reputation": 8
+          },
+          "item_drop": "flower (할머니의 도시락: 뚜껑을 열자마자 고소한 냄새가 내 양아치성을 마비시킨다.)"
+        }
+      }
+    },
+    {
+      "id": "evt_008",
+      "title": "우연히 지갑을 주웠다",
+      "description": "길에서 두둑한 지갑을 주웠다. 주인을 찾을 수 있을 것 같다.",
+      "choices": {
+        "A": {
+          "text": "돈만 쏙 빼고 버린다",
+          "result_message": "자본주의의 노예가 되어버렸군! '이건 신이 나에게 내린 보너스다. 주인 녀석은 운이 없었던 거야. 켈켈켈!' 편의점 블랙리스트 1순위의 기운이 느껴진다.",
+          "effects": {
+            "yangachi_raw": 15,
+            "kindness_raw": -15,
+            "reputation": -10
+          },
+          "item_drop": null
+        },
+        "C": {
+          "text": "연락처 찾아서 직접 돌려준다",
+          "result_message": "주인에게 지갑을 던져줬다. '어이, 네놈! 칠칠치 못하게 뭘 흘리고 다니는 거냐? 내 눈에 띄었으니 망정이지! 감사하며 살아라!' 세상이 나를 향해 후광을 비춘다.",
+          "effects": {
+            "yangachi_raw": -10,
+            "kindness_raw": 15,
+            "reputation": 15
+          },
+          "item_drop": null
+        }
+      }
+    },
+    {
+      "id": "evt_013",
+      "title": "버스 안 임산부",
+      "description": "만원 버스에서 임산부 배지를 단 분이 서 있다.",
+      "choices": {
+        "A": {
+          "text": "보란듯이 더 깊이 앉는다",
+          "result_message": "내 엉덩이는 이미 이 의자와 운명공동체다! 주변 승객들의 시선이 영하 40도다. 사회적으로 말살당하기 딱 좋은 날씨군.",
+          "effects": {
+            "yangachi_raw": 8,
+            "kindness_raw": -10,
+            "reputation": -8
+          },
+          "item_drop": null
+        },
+        "C": {
+          "text": "자리 양보한다",
+          "result_message": "강제 앉히기 기술 발동! '어이, 거기 임산부! 여기 앉아! 내가 서 있는 게 꼴 보기 싫어서 그러는 거니까 당장 앉으라고!' 인류애가 폭발해버린 몸이 되어버렸다.",
+          "effects": {
+            "yangachi_raw": -8,
+            "kindness_raw": 12,
+            "reputation": 10
+          },
+          "item_drop": null
+        }
+      }
+    },
+    {
+      "id": "evt_021",
+      "title": "새벽 공원의 노숙자",
+      "description": "공원 벤치에서 노숙자가 추위에 떨고 있다.",
+      "choices": {
+        "A": {
+          "text": "쫓아낸다 (내 구역이라며)",
+          "result_message": "냉혹한 어둠의 지배자 등극! '여긴 내 구역이다! 얼어 죽기 싫으면 당장 꺼져!' 심장 온도가 절대 0도에 도달했다.",
+          "effects": {
+            "yangachi_raw": 12,
+            "kindness_raw": -15,
+            "reputation": -10
+          },
+          "item_drop": null
+        },
+        "C": {
+          "text": "편의점에서 따뜻한 음료를 사다 준다",
+          "result_message": "캔커피로 뺨을 때릴 기세로 건넸다. '어이, 이거 마시고 정신 차려! 죽으면 시체 치우기 귀찮으니까 주는 거라고! 켈켈켈!' 부처의 자비가 공원을 감싼다.",
+          "effects": {
+            "yangachi_raw": -8,
+            "kindness_raw": 15,
+            "reputation": 5
+          },
+          "item_drop": null
+        }
+      }
+    }
+  ]
+}
