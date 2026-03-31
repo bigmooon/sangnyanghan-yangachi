@@ -2,12 +2,12 @@
   "events": [
     {
       "id": "evt_001",
-      "title": "복도에서 후배와 마주치다",
-      "description": "복도를 걷는데 겁먹은 후배가 길을 비켜준다. 눈이 마주쳤다.",
+      "title": "복도의 전율, 후배와의 조우",
+      "description": "살벌한 복도 공기를 가르며 걷는데, 겁에 질린 후배 놈이 모세의 기적마냥 길을 비킨다. 네놈, 지금 내 눈을 피하는 거냐?",
       "choices": {
         "A": {
-          "text": "어이, 뭘 봐? (위협한다)",
-          "result_message": "후배의 동공이 지진 난 것처럼 흔들리는군. '눈 깔아! 내 얼굴에 구멍이라도 뚫을 기세냐? 앙?!' 몸 안의 양아치 기운이 꿈틀거린다.",
+          "text": "어이, 뭘 봐? (공포의 눈싸움)",
+          "result_message": "후배의 동공이 진도 7.0 지진이라도 난 것처럼 흔들리는군. '눈 깔아! 내 얼굴에 구멍이라도 뚫을 기세냐? 앙?!' 몸 안의 양아치 기운이 시커멓게 꿈틀거린다.",
           "effects": {
             "yangachi_raw": 10,
             "kindness_raw": -5,
@@ -15,9 +15,19 @@
           },
           "item_drop": null
         },
+        "B": {
+          "text": "가방 이리 내놔! (강제 셔틀 위장)",
+          "result_message": "후배의 가방을 뺏어 들었다! '어이, 네놈 어깨가 내려앉으려고 하잖아! 내가 들어줄 테니 넌 뒤에서 내 그림자나 밟지 말고 따라와! 켈켈켈!' 친절인지 갈취인지 알 수 없는 기행에 세상이 혼란에 빠졌다.",
+          "effects": {
+            "yangachi_raw": 5,
+            "kindness_raw": 5,
+            "reputation": 0
+          },
+          "item_drop": "낡은 단어장 (후배의 피와 땀이 서린 단어장. 읽기만 해도 수험생의 원혼이 느껴져 소름이 돋는다.)"
+        },
         "C": {
-          "text": "야, 밥 먹었어? (친절하게 말한다)",
-          "result_message": "후배의 입에 빵을 쑤셔 넣었다! '야, 네놈! 배에서 꼬르륵 소리가 복도 끝까지 들린다고! 당장 이거 처먹어!' 인류애가 폭발해버렸군.",
+          "text": "야, 밥 먹었어? (탄수화물 폭격)",
+          "result_message": "후배의 입에 편의점 빵을 쑤셔 넣었다! '야, 네놈! 배에서 꼬르륵 소리가 복도 끝까지 들린다고! 당장 이거 처먹고 성불해라!' 인류애가 핵폭탄급으로 폭발해버렸군.",
           "effects": {
             "yangachi_raw": -5,
             "kindness_raw": 10,
@@ -29,12 +39,12 @@
     },
     {
       "id": "evt_002",
-      "title": "편의점 앞 시비",
-      "description": "편의점 앞에서 다른 동네 애들이 시비를 건다. 셋이서 하나를 건드리고 있다.",
+      "title": "편의점 앞 피의 축제",
+      "description": "편의점 파라솔 아래, 다른 동네 피라미들이 한 명을 둘러싸고 린치를 가하고 있다. 비릿한 시비의 냄새가 코를 찌르는군.",
       "choices": {
         "A": {
-          "text": "같이 달려든다 (합세한다)",
-          "result_message": "비겁한 린치 축제에 합류했다! '오호, 재밌는 사냥감이군? 나도 이 축제에 끼워달라고!' 지옥행 열차가 출발 대기 중이다.",
+          "text": "나도 끼워달라고! (합세)",
+          "result_message": "비겁한 린치 축제에 광기 어리게 난입했다! '오호, 재밌는 사냥감이군? 나도 이 축제에 끼워달라고!' 지옥행 열차가 풀악셀로 출발 대기 중이다.",
           "effects": {
             "yangachi_raw": 15,
             "kindness_raw": -10,
@@ -42,9 +52,19 @@
           },
           "item_drop": null
         },
+        "B": {
+          "text": "다 꺼져, 여긴 내 지정석이다! (독점)",
+          "result_message": "가해자와 피해자 모두를 쫓아냈다! '어이, 여기서 소란 피우지 마! 이 자리는 내가 라면 국물 마시며 고독을 씹을 신성한 곳이라고!' 고독한 늑대의 아우라가 편의점을 감싼다.",
+          "effects": {
+            "yangachi_raw": 10,
+            "kindness_raw": 0,
+            "reputation": -2
+          },
+          "item_drop": "찌그러진 캔커피 (누군가 마시다 버린 캔커피. 자본주의의 쓴맛이 바닥에 깔려 있다.)"
+        },
         "C": {
-          "text": "야 임마들, 그만해. (끼어든다)",
-          "result_message": "정의의 주먹(인 척하는 난입)으로 약자를 구원했다. '어이, 세 명이서 한 명? 쪽팔리지도 않냐? 숫자를 맞추려면 나랑 붙어야지, 안 그래? 켈켈켈!'",
+          "text": "쪽수로 밀어붙이냐? (정의의 난입)",
+          "result_message": "정의의 주먹(인 척하는 난입)으로 약자를 구원했다. '어이, 세 명이서 한 명? 쪽팔리지도 않냐? 숫자를 맞추려면 나랑 붙어야지, 안 그래? 켈켈켈!' 후광이 내 뒤통수를 강타한다.",
           "effects": {
             "yangachi_raw": -5,
             "kindness_raw": 15,
@@ -56,12 +76,12 @@
     },
     {
       "id": "evt_003",
-      "title": "할머니의 무거운 짐",
-      "description": "시장에서 할머니가 무거운 짐을 들고 힘겹게 걷고 있다.",
+      "title": "할머니의 운명적 과부하",
+      "description": "시장 한복판, 할머니 한 분이 지구의 무게를 담은 듯한 짐을 들고 위태롭게 걷고 있다. 저 짐이 땅에 닿으면 종말이 올지도 몰라.",
       "choices": {
         "A": {
-          "text": "무시하고 지나간다",
-          "result_message": "할머니의 한숨 소리가 등 뒤에 꽂힌다. '짐이 무거우면 집 밖으로 나오질 말아야지. 쯧.' 사회적 말살의 전조인가?",
+          "text": "운명은 스스로 개척하는 법 (방관)",
+          "result_message": "할머니의 깊은 한숨 소리가 등 뒤에 비수처럼 꽂힌다. '짐이 무거우면 집 밖으로 나오질 말아야지. 쯧.' 사회적 말살의 어두운 전조가 내 그림자를 덮친다.",
           "effects": {
             "yangachi_raw": 3,
             "kindness_raw": -8,
@@ -69,26 +89,36 @@
           },
           "item_drop": null
         },
+        "B": {
+          "text": "할매, 발등 찍히겠어! (경고와 방치)",
+          "result_message": "옆에서 깐족거리며 공포심을 자극했다! '어이 할매, 그거 놓치면 발가락 뼈 박살이야! 조심하라고! 켈켈켈!' 내 안의 뒤틀린 인성이 춤을 춘다.",
+          "effects": {
+            "yangachi_raw": 7,
+            "kindness_raw": -5,
+            "reputation": -5
+          },
+          "item_drop": null
+        },
         "C": {
-          "text": "할머니, 제가 들어드릴게요",
-          "result_message": "강제 배달 서비스를 시전했다! '어이 할매! 이 무거운 걸 왜 들고 있어? 당장 내놔! 보살핌받으니까 좋지? 켈켈켈!' 심장의 온도가 급상승했다.",
+          "text": "강제 배달 서비스다! (탈취형 선행)",
+          "result_message": "할머니의 짐을 낚아챘다! '어이 할매! 이 무거운 걸 왜 들고 있어? 보살핌받으니까 좋지? 어서 집 방향이나 가리켜!' 심장의 온도가 영하에서 영상 40도로 급상승했다.",
           "effects": {
             "yangachi_raw": -8,
             "kindness_raw": 12,
             "reputation": 8
           },
-          "item_drop": "flower (할머니의 도시락: 뚜껑을 열자마자 고소한 냄새가 내 양아치성을 마비시킨다.)"
+          "item_drop": "할머니의 도시락 (뚜껑을 열자마자 고소한 냄새가 내 흉포한 양아치성을 마비시킨다.)"
         }
       }
     },
     {
       "id": "evt_008",
-      "title": "우연히 지갑을 주웠다",
-      "description": "길에서 두둑한 지갑을 주웠다. 주인을 찾을 수 있을 것 같다.",
+      "title": "금단의 열매, 지갑",
+      "description": "길바닥에서 뚱뚱하게 살찐 지갑이 나를 유혹한다. 주인 녀석의 연락처가 적힌 명함이 삐져나와 있군. 처단할 것인가, 구원할 것인가?",
       "choices": {
         "A": {
-          "text": "돈만 쏙 빼고 버린다",
-          "result_message": "자본주의의 노예가 되어버렸군! '이건 신이 나에게 내린 보너스다. 주인 녀석은 운이 없었던 거야. 켈켈켈!' 편의점 블랙리스트 1순위의 기운이 느껴진다.",
+          "text": "세금 징수 시간이다 (횡령)",
+          "result_message": "자본주의의 노예로 전락했군! '이건 신이 나에게 내린 보너스다. 주인 녀석은 운이 없었던 거야. 켈켈켈!' 편의점 블랙리스트 1순위의 불길한 기운이 나를 감싼다.",
           "effects": {
             "yangachi_raw": 15,
             "kindness_raw": -15,
@@ -96,9 +126,19 @@
           },
           "item_drop": null
         },
+        "B": {
+          "text": "경찰서 앞에 던져둔다 (무심)",
+          "result_message": "귀찮음을 이기지 못하고 파출소 문 앞에 툭 던졌다. '어이, 순경 아저씨! 누가 길에 쓰레기 버렸길래 주워왔어!' 착한 척하는 내 모습에 닭살이 돋아 견딜 수 없다.",
+          "effects": {
+            "yangachi_raw": 0,
+            "kindness_raw": 5,
+            "reputation": 2
+          },
+          "item_drop": "100원 동전 (지갑 옆에 떨어져 있던 동전. 전 주인에게 돌려주기엔 너무나 하찮아 내가 거두어줬다.)"
+        },
         "C": {
-          "text": "연락처 찾아서 직접 돌려준다",
-          "result_message": "주인에게 지갑을 던져줬다. '어이, 네놈! 칠칠치 못하게 뭘 흘리고 다니는 거냐? 내 눈에 띄었으니 망정이지! 감사하며 살아라!' 세상이 나를 향해 후광을 비춘다.",
+          "text": "직접 가서 훈계한다 (강제 반환)",
+          "result_message": "주인 녀석 면상에 지갑을 던져줬다. '어이, 네놈! 칠칠치 못하게 뭘 흘리고 다니는 거냐? 내 눈에 띄었으니 망정이지! 감사하며 살아라!' 세상이 나를 향해 눈부신 후광을 비추고 있다.",
           "effects": {
             "yangachi_raw": -10,
             "kindness_raw": 15,
@@ -110,12 +150,12 @@
     },
     {
       "id": "evt_013",
-      "title": "버스 안 임산부",
-      "description": "만원 버스에서 임산부 배지를 단 분이 서 있다.",
+      "title": "지옥의 만원 버스, 임산부",
+      "description": "만원 버스 안, 분홍색 배지를 단 임산부가 서 있다. 주변 놈들은 모두 자는 척 연기 대상 후보급 열연 중이군. 역겨워라.",
       "choices": {
         "A": {
-          "text": "보란듯이 더 깊이 앉는다",
-          "result_message": "내 엉덩이는 이미 이 의자와 운명공동체다! 주변 승객들의 시선이 영하 40도다. 사회적으로 말살당하기 딱 좋은 날씨군.",
+          "text": "내 엉덩이는 철근이다 (무시)",
+          "result_message": "내 엉덩이는 이미 이 의자와 영혼의 결속을 맺었다! '잠이나 자야겠군...' 주변 승객들의 시선이 영하 40도의 극지방이다. 사회적으로 말살당하기 딱 좋은 날씨다.",
           "effects": {
             "yangachi_raw": 8,
             "kindness_raw": -10,
@@ -123,9 +163,19 @@
           },
           "item_drop": null
         },
+        "B": {
+          "text": "옆 사람을 깨운다 (떠넘기기)",
+          "result_message": "옆에서 자던 놈을 강제로 깨워 양보하게 했다! '어이, 네놈! 임산부 앞에서 잠이 오냐? 당장 인류애를 발휘하라고!' 양아치인지 정의의 사자인지 구분 불가의 경지에 도달했다.",
+          "effects": {
+            "yangachi_raw": 5,
+            "kindness_raw": 5,
+            "reputation": 2
+          },
+          "item_drop": null
+        },
         "C": {
-          "text": "자리 양보한다",
-          "result_message": "강제 앉히기 기술 발동! '어이, 거기 임산부! 여기 앉아! 내가 서 있는 게 꼴 보기 싫어서 그러는 거니까 당장 앉으라고!' 인류애가 폭발해버린 몸이 되어버렸다.",
+          "text": "강제 착석 명령! (양보)",
+          "result_message": "강제 앉히기 기술 발동! '어이, 거기 임산부! 여기 앉아! 내가 서 있는 게 꼴 보기 싫어서 시위하는 거니까 당장 앉으라고!' 부처의 미소가 내 입가에 번지는 끔찍한 몸이 되어버렸다.",
           "effects": {
             "yangachi_raw": -8,
             "kindness_raw": 12,
@@ -136,13 +186,388 @@
       }
     },
     {
-      "id": "evt_021",
-      "title": "새벽 공원의 노숙자",
-      "description": "공원 벤치에서 노숙자가 추위에 떨고 있다.",
+      "id": "evt_004",
+      "title": "교실의 침묵, 수업 방해자",
+      "description": "수업 중 뒤에서 떠들던 놈이 선생님한테 혼나고 있다. 반 전체가 숨죽이며 구경하는 이 팝콘 각의 상황, 어찌할 것인가.",
       "choices": {
         "A": {
-          "text": "쫓아낸다 (내 구역이라며)",
-          "result_message": "냉혹한 어둠의 지배자 등극! '여긴 내 구역이다! 얼어 죽기 싫으면 당장 꺼져!' 심장 온도가 절대 0도에 도달했다.",
+          "text": "더 크게 떠든다 (관심 납치)",
+          "result_message": "선생님의 분노가 나에게로 이전됐다! '어이, 선생! 저 놈보다 내가 더 시끄러우면 저 놈 풀어주는 거 아냐?' 교실이 공포의 전쟁터로 돌변했다.",
+          "effects": { "yangachi_raw": 12, "kindness_raw": -5, "reputation": -8 },
+          "item_drop": null
+        },
+        "B": {
+          "text": "자는 척한다 (생존 본능)",
+          "result_message": "책상에 얼굴을 처박고 완벽한 수면 연기를 펼쳤다. '내가 여기 있었던가? 난 이미 꿈나라 주민이라고.' 생존에 특화된 카멜레온 기질이 빛을 발한다.",
+          "effects": { "yangachi_raw": 0, "kindness_raw": -3, "reputation": -2 },
+          "item_drop": null
+        },
+        "C": {
+          "text": "내가 한 거라고 우긴다 (희생 본능)",
+          "result_message": "벌떡 일어나 죄를 뒤집어썼다! '선생, 저 놈은 잘못 없어. 내가 시킨 거야.' 반 아이들의 눈이 일제히 나를 향한다. 영웅인지 바보인지 알 수 없는 경지에 올랐다.",
+          "effects": { "yangachi_raw": -5, "kindness_raw": 15, "reputation": 10 },
+          "item_drop": null
+        }
+      }
+    },
+    {
+      "id": "evt_005",
+      "title": "비 오는 날의 비극, 우산 없음",
+      "description": "갑자기 폭우가 쏟아진다. 옆에 우산 없는 초등학생이 처마 밑에서 벌벌 떨고 있군. 내 우산은 하나뿐이다.",
+      "choices": {
+        "A": {
+          "text": "먼저 간다 (생존이 최우선)",
+          "result_message": "아이의 눈망울을 뒤로하고 혼자 우산 쓰고 사라졌다. '비 맞으면 면역력 생긴다. 감사하게 생각해.' 내 안의 인류애가 또 한 번 동사했다.",
+          "effects": { "yangachi_raw": 8, "kindness_raw": -12, "reputation": -10 },
+          "item_drop": null
+        },
+        "B": {
+          "text": "우산 빌려주고 비 맞는다 (무언의 희생)",
+          "result_message": "말없이 우산을 던져주고 빗속을 걸었다. '어이, 이건 선물이 아니야. 나중에 같은 처지의 놈한테 줘버려.' 흠뻑 젖은 채로 멋있는 척하는 데 성공했다.",
+          "effects": { "yangachi_raw": -3, "kindness_raw": 12, "reputation": 12 },
+          "item_drop": "flower"
+        },
+        "C": {
+          "text": "같이 쓴다 (강제 동승)",
+          "result_message": "아이를 반강제로 우산 안에 끌어당겼다. '어이, 꼬맹아! 비 맞으면 열이 나고 코 막히고 머리 아프고 빙빙 도는 거 알아? 그냥 여기 서있어!' 남이 보면 誘拐犯으로 오해할 만한 상황이 연출됐다.",
+          "effects": { "yangachi_raw": 3, "kindness_raw": 8, "reputation": 5 },
+          "item_drop": null
+        }
+      }
+    },
+    {
+      "id": "evt_006",
+      "title": "편의점 알바생의 시련",
+      "description": "편의점에서 진상 손님이 알바생을 갈구고 있다. 네이처럴 본 양아치 DNA가 씰룩거린다.",
+      "choices": {
+        "A": {
+          "text": "나도 불만 있다 (편승)",
+          "result_message": "진상 손님 옆에 붙어 같이 항의했다! '맞아, 나도 여기 서비스 별로야. 컵라면 뚜껑이 항상 반쪽만 열려있다고!' 알바생의 눈에서 빛이 사라졌다.",
+          "effects": { "yangachi_raw": 12, "kindness_raw": -10, "reputation": -8 },
+          "item_drop": null
+        },
+        "B": {
+          "text": "촬영한다 (증거 수집)",
+          "result_message": "핸드폰을 꺼내 진상 행각을 녹화했다. '어이, 잘 찍히고 있어. 이거 SNS에 올리면 조회수 폭발이겠는걸.' 진상 손님이 슬그머니 사라졌다. 현대 무기의 위엄이로군.",
+          "effects": { "yangachi_raw": 5, "kindness_raw": 5, "reputation": 3 },
+          "item_drop": "phonecase"
+        },
+        "C": {
+          "text": "진상 손님에게 한마디 (직접 개입)",
+          "result_message": "진상 손님 앞을 막아섰다! '어이, 알바생 갈구는 거 취미야? 을질은 너 수준 낮다는 거 광고하는 거라고. 꺼져.' 알바생이 눈물을 참으며 고개를 숙였다.",
+          "effects": { "yangachi_raw": -5, "kindness_raw": 15, "reputation": 15 },
+          "item_drop": null
+        }
+      }
+    },
+    {
+      "id": "evt_007",
+      "title": "도서관의 폭군, 소음 테러범",
+      "description": "조용한 도서관에서 한 놈이 핸드폰 스피커로 유튜브를 틀고 있다. 사서는 눈치만 보고, 다들 참고 있군.",
+      "choices": {
+        "A": {
+          "text": "나도 스피커 켠다 (소음 전쟁)",
+          "result_message": "맞불 작전으로 더 큰 볼륨으로 응수했다! '어이, 이건 소음 전쟁이다! 누가 더 시끄럽나 해보자고!' 도서관이 클럽으로 변모하는 역사적 순간이다.",
+          "effects": { "yangachi_raw": 15, "kindness_raw": -12, "reputation": -12 },
+          "item_drop": null
+        },
+        "B": {
+          "text": "사서한테 고자질한다 (문명적 해결)",
+          "result_message": "사서에게 조용히 상황을 알렸다. '저기요, 저 사람 핸드폰 소리가 좀...' 사서가 용기를 얻어 제지에 나섰다. 나름 질서 유지에 공헌했군.",
+          "effects": { "yangachi_raw": -2, "kindness_raw": 5, "reputation": 3 },
+          "item_drop": null
+        },
+        "C": {
+          "text": "직접 조용히 시킨다 (공권력 자처)",
+          "result_message": "소음 테러범 앞에 서서 눈을 마주쳤다. '….' 말 한마디 없이 눈빛만으로 전달했다. 상대방은 5초 만에 핸드폰을 집어넣었다. 눈빛 하나로 제압하는 양아치의 품격이다.",
+          "effects": { "yangachi_raw": 8, "kindness_raw": 3, "reputation": 5 },
+          "item_drop": null
+        }
+      }
+    },
+    {
+      "id": "evt_009",
+      "title": "길고양이의 호소",
+      "description": "골목 구석에서 다리를 절룩이는 길고양이가 나를 쳐다보고 있다. 눈이 마주쳤다. 도망가지도 않는다.",
+      "choices": {
+        "A": {
+          "text": "발로 쫓는다 (무정)",
+          "result_message": "고양이를 발로 쫓아냈다. '어이, 자연에서 알아서 살아남아. 그게 진짜 생존이야.' 고양이는 절룩이며 사라졌다. 인생의 가장 검은 페이지 중 하나가 기록됐다.",
+          "effects": { "yangachi_raw": 10, "kindness_raw": -15, "reputation": -12 },
+          "item_drop": null
+        },
+        "B": {
+          "text": "못 본 척 지나간다 (자기 합리화)",
+          "result_message": "눈을 피하고 지나쳤다. '나는 인간도 제대로 못 챙기는데 고양이까지...' 뒤통수에서 고양이 눈빛이 화살처럼 꽂힌다. 양심이 쓸데없이 살아있군.",
+          "effects": { "yangachi_raw": 3, "kindness_raw": -5, "reputation": -2 },
+          "item_drop": null
+        },
+        "C": {
+          "text": "편의점 참치캔을 사다준다 (비밀 자비)",
+          "result_message": "편의점에서 참치캔을 사다가 따서 앞에 놓았다. '어이, 이건 동정이 아니야. 배고픈 거 보기 싫어서 그냥 하는 거라고.' 고양이가 먹기 시작했다. 내 심장에 균열이 생기기 시작했다.",
+          "effects": { "yangachi_raw": -8, "kindness_raw": 15, "reputation": 5 },
+          "item_drop": "flower"
+        }
+      }
+    },
+    {
+      "id": "evt_010",
+      "title": "새치기의 왕, 줄서기 전쟁",
+      "description": "밥집 앞에 길게 늘어선 줄. 양복 입은 아저씨가 태연하게 새치기를 했다. 줄 선 사람들이 쑥덕거리기만 하고 아무도 말을 못 한다.",
+      "choices": {
+        "A": {
+          "text": "나도 새치기한다 (기회주의)",
+          "result_message": "아저씨 뒤를 바짝 붙어 같이 앞으로 나섰다! '어이, 어른 따라하는 거 아냐?' 줄 선 사람들의 분노가 폭발하기 일보 직전이다.",
+          "effects": { "yangachi_raw": 12, "kindness_raw": -8, "reputation": -10 },
+          "item_drop": null
+        },
+        "B": {
+          "text": "그냥 기다린다 (인내심 수련)",
+          "result_message": "속이 부글거리지만 묵묵히 기다렸다. '언젠가 저 아저씨도 댓가를 치르겠지.' 10분 후 결국 맛있는 밥을 먹었다. 분노를 삭힌 자의 식사는 더 달다.",
+          "effects": { "yangachi_raw": -2, "kindness_raw": 3, "reputation": 2 },
+          "item_drop": null
+        },
+        "C": {
+          "text": "아저씨한테 직접 한다 (정의 구현)",
+          "result_message": "아저씨 어깨를 탁 건드렸다. '어이, 아저씨. 여기 줄 끝이 어딘지 모르는 것 같아서요.' 아저씨가 머쓱해하며 뒤로 돌아갔다. 박수 소리가 들리는 것 같다.",
+          "effects": { "yangachi_raw": -5, "kindness_raw": 10, "reputation": 15 },
+          "item_drop": null
+        }
+      }
+    },
+    {
+      "id": "evt_011",
+      "title": "시험 전날 밤, 부정 행위의 유혹",
+      "description": "내일 중요한 시험. 옆자리 녀석이 커닝 페이퍼를 만들며 하나 더 만들어 주겠다고 한다. 받을 것인가.",
+      "choices": {
+        "A": {
+          "text": "받는다, 더 크게 만든다 (프로 커닝러)",
+          "result_message": "커닝 페이퍼를 받고 직접 더 정교한 버전을 제작했다! '이 정도면 예술 작품이지. 감독관 눈을 비웃어줄 테다.' 인생 최대의 도박이 시작됐다.",
+          "effects": { "yangachi_raw": 15, "kindness_raw": -8, "reputation": -5 },
+          "item_drop": null
+        },
+        "B": {
+          "text": "거절하고 잠 잔다 (체념형 정직)",
+          "result_message": "거절하고 그냥 잤다. '어차피 공부 안 했으면 커닝도 소용없어. 운명을 받아들이지.' 시험장에서 무기력하게 펜을 굴렸다.",
+          "effects": { "yangachi_raw": 2, "kindness_raw": 2, "reputation": 0 },
+          "item_drop": null
+        },
+        "C": {
+          "text": "거절하고 같이 공부하자 한다 (강제 스터디)",
+          "result_message": "커닝 페이퍼를 빼앗고 교과서를 펼쳤다! '어이, 네놈! 이런 거 만들 시간에 그냥 외워버려! 내가 같이 해줄 테니 덮어!' 새벽 3시까지 강제 스터디가 진행됐다.",
+          "effects": { "yangachi_raw": -5, "kindness_raw": 12, "reputation": 8 },
+          "item_drop": null
+        }
+      }
+    },
+    {
+      "id": "evt_012",
+      "title": "떨어진 지폐의 주인은?",
+      "description": "길을 걷다 만원짜리 지폐가 발 앞에 떨어져 있다. 주변을 둘러봐도 주인이 없다. 천사인가, 악마인가.",
+      "choices": {
+        "A": {
+          "text": "빠르게 주머니에 (신속 획득)",
+          "result_message": "번개 같은 속도로 지폐를 집어넣었다. '자본주의에서 빠른 손이 이기는 거야. 이건 진리야.' 만원으로 편의점 폭식이 예약됐다.",
+          "effects": { "yangachi_raw": 10, "kindness_raw": -8, "reputation": -5 },
+          "item_drop": "coffee"
+        },
+        "B": {
+          "text": "그냥 둔다 (무관심)",
+          "result_message": "지폐를 발로 살짝 밀어버렸다. '내 돈도 아닌 거 귀찮게. 바람에 날아가버려라.' 뒤에 오던 아이가 신나게 주워갔다. 결과적으로 좋은 일을 한 건지도 모른다.",
+          "effects": { "yangachi_raw": 2, "kindness_raw": 0, "reputation": 0 },
+          "item_drop": null
+        },
+        "C": {
+          "text": "파출소에 갖다준다 (정석)",
+          "result_message": "파출소에 신고했다. '어이 순경, 이거 주인한테 돌려줘. 나는 남의 돈 안 써.' 순경이 놀란 눈으로 봤다. 만원 때문에 양심을 파는 짓은 못 하겠더군.",
+          "effects": { "yangachi_raw": -8, "kindness_raw": 10, "reputation": 10 },
+          "item_drop": null
+        }
+      }
+    },
+    {
+      "id": "evt_014",
+      "title": "운동장의 약육강식, 축구공 강탈",
+      "description": "운동장에서 혼자 축구 연습 중인데, 불량 선배들이 공을 빼앗으려 한다. 내 공이다. 어쩔 것인가.",
+      "choices": {
+        "A": {
+          "text": "같이 하자고 협박한다 (역제압)",
+          "result_message": "선배들을 되려 압도했다! '어이, 공 빼앗을 거면 나랑 1대3으로 해. 이기면 줄게.' 당황한 선배들이 얼떨결에 경기를 하게 됐다. 무서운 신입이 등장했다.",
+          "effects": { "yangachi_raw": 12, "kindness_raw": 0, "reputation": 5 },
+          "item_drop": null
+        },
+        "B": {
+          "text": "공을 주고 피한다 (전략적 후퇴)",
+          "result_message": "아무 말 없이 공을 던져주고 자리를 떴다. '오늘은 물러서지만 두고 봐.' 패배감과 현명함이 뒤섞인 묘한 감정이 남는다.",
+          "effects": { "yangachi_raw": -3, "kindness_raw": -5, "reputation": -5 },
+          "item_drop": null
+        },
+        "C": {
+          "text": "선생님 불러온다 (공권력 동원)",
+          "result_message": "체육 선생님을 데려왔다. '선생님, 저기 선배들이 후배 공 빼앗으려 해요.' 선배들이 혼나는 걸 지켜보며 묘한 희열을 느꼈다. 정의는 결국 승리한다.",
+          "effects": { "yangachi_raw": -5, "kindness_raw": 8, "reputation": 8 },
+          "item_drop": null
+        }
+      }
+    },
+    {
+      "id": "evt_015",
+      "title": "폭염의 길거리, 쓰러지는 할아버지",
+      "description": "한여름 炎天下, 앞에서 걷던 노인이 갑자기 휘청이며 쓰러질 것 같다. 주변 사람들이 멈추지 않고 지나친다.",
+      "choices": {
+        "A": {
+          "text": "나도 지나친다 (합리화)",
+          "result_message": "시선을 돌리고 지나쳤다. '나는 의사가 아니야. 전문가가 알아서 하겠지.' 등 뒤에서 누군가 쓰러지는 소리가 들렸다. 오늘 밤 잠 못 자게 생겼군.",
+          "effects": { "yangachi_raw": 5, "kindness_raw": -20, "reputation": -15 },
+          "item_drop": null
+        },
+        "B": {
+          "text": "119 신고한다 (의무의 최소화)",
+          "result_message": "걸으면서 119에 신고했다. '아, 여기 노인 쓰러질 것 같아요. 위치는...' 최소한의 양심을 이행했다. 완벽하진 않지만 아무것도 안 하는 것보단 낫다.",
+          "effects": { "yangachi_raw": 0, "kindness_raw": 8, "reputation": 5 },
+          "item_drop": null
+        },
+        "C": {
+          "text": "직접 부축한다 (몸으로 때우기)",
+          "result_message": "달려가서 할아버지를 잡았다! '어이, 할아버지! 이 더위에 왜 나오셨어요? 그늘로 이동합시다!' 119를 부르고 그늘에서 구급대원이 올 때까지 함께 앉아있었다.",
+          "effects": { "yangachi_raw": -10, "kindness_raw": 18, "reputation": 15 },
+          "item_drop": "amulet"
+        }
+      }
+    },
+    {
+      "id": "evt_016",
+      "title": "SNS의 덫, 뒷담화 카톡방",
+      "description": "반 단톡방에서 한 애를 집중적으로 욕하는 게 시작됐다. 거기다 나보고 같이 하자고 태그가 됐다.",
+      "choices": {
+        "A": {
+          "text": "같이 신나게 욕한다 (군중심리)",
+          "result_message": "무리에 섞여 키보드 워리어가 됐다. '나도 그 애 원래 별로였어.' 뒤통수에서 양심이 뭔가 타는 냄새가 난다.",
+          "effects": { "yangachi_raw": 10, "kindness_raw": -15, "reputation": -8 },
+          "item_drop": null
+        },
+        "B": {
+          "text": "읽씹한다 (중립 선언)",
+          "result_message": "메시지를 읽고 아무 반응을 하지 않았다. '나는 이 전쟁에 참전하지 않겠어.' 불편하지만 최소한 가담은 안 했다. 비겁한 선택이지만 실용적인 생존이다.",
+          "effects": { "yangachi_raw": 3, "kindness_raw": -3, "reputation": -2 },
+          "item_drop": null
+        },
+        "C": {
+          "text": "반박 메시지를 날린다 (역공)",
+          "result_message": "단톡방에 한 줄 남겼다. '어이, 없는 자리에서 욕하는 거 멋있어 보여? 직접 말해. 아니면 닥쳐.' 단톡방이 갑자기 조용해졌다. 혼자 싸우는 외로운 용기가 빛났다.",
+          "effects": { "yangachi_raw": -5, "kindness_raw": 15, "reputation": 12 },
+          "item_drop": null
+        }
+      }
+    },
+    {
+      "id": "evt_017",
+      "title": "알바 첫날, 꼰대 매니저",
+      "description": "편의점 알바 첫날. 매니저가 말도 안 되는 트집을 잡으며 갈구기 시작한다. 반말은 기본이다.",
+      "choices": {
+        "A": {
+          "text": "맞받아친다 (자존심 사수)",
+          "result_message": "매니저 눈을 똑바로 보며 받아쳤다. '저도 존댓말 쓰는 거 어렵지 않으세요?' 매니저가 굳어버렸다. 첫날부터 전선이 형성됐다.",
+          "effects": { "yangachi_raw": 12, "kindness_raw": 0, "reputation": 3 },
+          "item_drop": null
+        },
+        "B": {
+          "text": "웃으며 참는다 (프로 생존자)",
+          "result_message": "입꼬리를 올리고 '네, 알겠습니다' 를 반복했다. '돈이 먼저야. 자존심은 통장에서 찾는 거야.' 월급날을 기다리며 내면의 불꽃을 억눌렀다.",
+          "effects": { "yangachi_raw": -3, "kindness_raw": -5, "reputation": -2 },
+          "item_drop": "coffee"
+        },
+        "C": {
+          "text": "바로 그만둔다 (쿨한 퇴장)",
+          "result_message": "앞치마를 벗어 카운터에 놓았다. '어이, 나 오늘까지만 할게요.' 매니저가 당황했다. 자존심에 가격표를 붙이지 않는 삶이란 이런 것이다.",
+          "effects": { "yangachi_raw": 8, "kindness_raw": 5, "reputation": 5 },
+          "item_drop": null
+        }
+      }
+    },
+    {
+      "id": "evt_018",
+      "title": "길거리 모금함의 비밀",
+      "description": "자선단체 직원이 기부 요청을 한다. 모금함이 반쯤 차 있다. 지갑 안에 오천원이 전부다.",
+      "choices": {
+        "A": {
+          "text": "오천원 다 넣는다 (무한 선의)",
+          "result_message": "지갑의 마지막 돈을 털었다. '어이, 나보다 힘든 사람이 있다는 거잖아.' 오늘 저녁은 굶겠지만 마음이 이상하게 가볍다.",
+          "effects": { "yangachi_raw": -12, "kindness_raw": 18, "reputation": 10 },
+          "item_drop": "amulet"
+        },
+        "B": {
+          "text": "천원만 넣는다 (합리적 기부)",
+          "result_message": "천원을 꺼내 넣었다. '많지는 않지만 없는 것보단 낫잖아.' 직원이 밝게 웃었다. 소액이지만 진심이 담겼다.",
+          "effects": { "yangachi_raw": -3, "kindness_raw": 8, "reputation": 5 },
+          "item_drop": null
+        },
+        "C": {
+          "text": "무시하고 지나간다 (철벽 방어)",
+          "result_message": "시선을 정면에 고정하고 무표정으로 지나쳤다. '나도 가난해.' 라고 중얼거렸다. 사실이기도 하다.",
+          "effects": { "yangachi_raw": 5, "kindness_raw": -5, "reputation": -3 },
+          "item_drop": null
+        }
+      }
+    },
+    {
+      "id": "evt_019",
+      "title": "지하철 취객의 시비",
+      "description": "지하철에서 만취한 아저씨가 옆에 서있는 여성에게 시비를 걸기 시작한다. 주변 사람들은 시선을 피한다.",
+      "choices": {
+        "A": {
+          "text": "취객에게 같이 달려든다 (오해)",
+          "result_message": "잘못 끼어들어 취객 편처럼 보였다! '어이, 거기서 뭐하는 거야!' 했더니 피해자가 나까지 무서워했다. 의도와 결과가 이렇게 다를 수 있다는 인생의 교훈이다.",
+          "effects": { "yangachi_raw": 10, "kindness_raw": -10, "reputation": -12 },
+          "item_drop": null
+        },
+        "B": {
+          "text": "역무원 호출 버튼 누른다 (시스템 활용)",
+          "result_message": "비상 호출 버튼을 눌렀다. 역무원이 달려왔고 취객은 격리됐다. 시스템을 올바르게 사용하는 것도 용기다.",
+          "effects": { "yangachi_raw": 0, "kindness_raw": 8, "reputation": 8 },
+          "item_drop": null
+        },
+        "C": {
+          "text": "취객과 피해자 사이에 선다 (몸으로 막기)",
+          "result_message": "두 사람 사이에 끼어들어 취객을 정면으로 봤다. '어이 아저씨. 저 분은 아는 분이에요. 그만하세요.' 취객이 나를 보고 물러섰다. 거짓말이지만 결과는 좋았다.",
+          "effects": { "yangachi_raw": -5, "kindness_raw": 15, "reputation": 18 },
+          "item_drop": null
+        }
+      }
+    },
+    {
+      "id": "evt_020",
+      "title": "선글라스 가게의 유혹",
+      "description": "가게 앞에 선글라스가 진열돼 있다. 점원은 잠시 안을 보고 있다. 아무도 안 보는 순간이다.",
+      "choices": {
+        "A": {
+          "text": "슬쩍한다 (5핑거 디스카운트)",
+          "result_message": "손이 먼저 움직였다. 선글라스가 주머니 속으로 사라졌다. '어이, 이건 세상이 나한테 주는 거야.' CCTV가 나를 지켜보고 있는 것 같다.",
+          "effects": { "yangachi_raw": 15, "kindness_raw": -12, "reputation": -15 },
+          "item_drop": "sunglasses"
+        },
+        "B": {
+          "text": "써보고 그냥 둔다 (착용 체험)",
+          "result_message": "선글라스를 써보고 거울을 봤다. '오, 나쁘지 않은데.' 하지만 돈이 없다. 아쉽게 내려놓고 지나쳤다. 청렴한 척하지만 사실 돈이 없었던 거다.",
+          "effects": { "yangachi_raw": 2, "kindness_raw": 2, "reputation": 0 },
+          "item_drop": null
+        },
+        "C": {
+          "text": "정가에 구매한다 (성인의 선택)",
+          "result_message": "점원을 불러 선글라스를 샀다. 돈이 없어서 집에 있는 용돈을 털었지만, 정당하게 내 것이 됐다. 선글라스를 쓰고 걷는 발걸음이 당당하다.",
+          "effects": { "yangachi_raw": -3, "kindness_raw": 5, "reputation": 5 },
+          "item_drop": "sunglasses"
+        }
+      }
+    },
+    {
+      "id": "evt_021",
+      "title": "새벽 공원의 유령, 노숙자",
+      "description": "차디찬 새벽 공기가 감도는 공원 벤치, 노숙자 한 명이 추위에 떨며 생사의 갈림길을 걷고 있다. 인생의 처절한 바닥을 구경하게 됐군.",
+      "choices": {
+        "A": {
+          "text": "여긴 내 나와바리다! (축출)",
+          "result_message": "냉혹한 어둠의 군주로 등극했다! '여긴 내 구역이다! 얼어 죽기 싫으면 당장 다른 지옥으로 꺼져!' 심장의 온도가 절대 0도에 도달해버렸다.",
           "effects": {
             "yangachi_raw": 12,
             "kindness_raw": -15,
@@ -150,9 +575,19 @@
           },
           "item_drop": null
         },
+        "B": {
+          "text": "신문지를 던져준다 (최소한의 자비)",
+          "result_message": "근처 쓰레기통의 신문지를 덮어버렸다. '어이, 관 짜기 싫으면 이거라도 덮어! 켈켈켈!' 세상이 나를 쓰레기인지 구원자인지 헷갈려 하기 시작했다.",
+          "effects": {
+            "yangachi_raw": 5,
+            "kindness_raw": 5,
+            "reputation": 0
+          },
+          "item_drop": null
+        },
         "C": {
-          "text": "편의점에서 따뜻한 음료를 사다 준다",
-          "result_message": "캔커피로 뺨을 때릴 기세로 건넸다. '어이, 이거 마시고 정신 차려! 죽으면 시체 치우기 귀찮으니까 주는 거라고! 켈켈켈!' 부처의 자비가 공원을 감싼다.",
+          "text": "뜨거운 액체 폭탄! (음료 선사)",
+          "result_message": "따뜻한 캔커피로 뺨을 후려칠 기세로 건넸다. '어이, 이거 마시고 정신 차려! 죽으면 시체 치우기 귀찮으니까 특별히 주는 거라고! 켈켈켈!' 부처의 자비가 새벽 공원을 포근하게 감싼다.",
           "effects": {
             "yangachi_raw": -8,
             "kindness_raw": 15,
