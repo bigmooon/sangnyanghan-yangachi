@@ -22,6 +22,14 @@ class Item(BaseModel):
     description: str = ""
 
 
+class RunReport(BaseModel):
+    summary: str
+    highlights: list[str] = []
+    character_arc: str = ""
+    final_assessment: str = ""
+    star_rating: int = 3
+
+
 class GameState(BaseModel):
     session_id: str
     turn: int
@@ -36,6 +44,9 @@ class GameState(BaseModel):
     is_game_over: bool
     game_over_reason: str | None = None
     ending_type: str | None = None
+    # Phase 2: LLM 생성 필드 (없으면 None)
+    narrative: str | None = None
+    run_report: RunReport | None = None
 
 
 # POST /api/game/start
@@ -59,6 +70,7 @@ class SubmitChoiceResponse(BaseModel):
     state: GameState
     result_message: str = Field(description="선택 결과 텍스트")
     side_effect_message: str | None = None
+    result_narration: str | None = None  # LLM 생성 결과 내러티브
 
 
 # POST /api/game/item
@@ -75,6 +87,11 @@ class UseItemResponse(BaseModel):
 # GET /api/game/state/{session_id}
 class GameStateResponse(BaseModel):
     state: GameState
+
+
+# POST /api/game/next
+class NextEventRequest(BaseModel):
+    session_id: str
 
 
 # DELETE /api/game/session
